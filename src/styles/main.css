@@ -1,3 +1,32 @@
+:root{
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-blue: #0F56B3;
+  --color-gray: #FBFBFB;
+
+}
+
 .main{
+  position: relative;
+}
+
+.main::after{
+  content: "";
+  background: var(--color-black);
+  z-index: 10;
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: .8;
+  z-index: 10;
+}
+
+.main-content{
   background: url('../img/bg.jfif');
+  background-position-y: -480px;
+  background-size: cover;
+  margin: auto;
+  min-height: 100vh;
 }

@@ -4,7 +4,9 @@ import '../../styles/main.css'
 function Home(){
   return(
     <main className="main">
+      <div className="main-content">
 
+      </div>
     </main>
   )
 }
