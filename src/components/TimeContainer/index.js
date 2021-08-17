@@ -3,8 +3,7 @@ import Time from '../Time'
 import getTimeRemaining from '../../helper/getTimeRemaining'
 import '../../styles/time.css'
 
-function TimeContainer() {
-  const endDate = 'December 27 2021 10:10:00 GMT+0400'
+function TimeContainer({endDate}) {
   let t = getTimeRemaining(endDate)
   const [seconds, setSeconds] = useState(t.seconds)
   const [minutes, setMinutes] = useState(t.minutes)
