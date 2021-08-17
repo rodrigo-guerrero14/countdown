@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+:root{
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-blue: #0F56B3;
+  --color-gray: #FBFBFB;
+  --color-dark-gray: #1A1A1A;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width: 850px){
+  .main{
+    background-position-y: -48px !important;
+  }
+
+  .main-content {
+      padding-top: 275px !important;
+  }
+
+  .main-content > .time-container{
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 16px;
+    justify-content: center;
+    width: 60%;
+  }
+
+  .main-content .time-container article{
+    margin-right: 7.65px;
+  }
+
+  .main-content .time-container article .data-time{
+    align-items: center;
+    border-radius: 5.1px;
+    display: flex;
+    padding: 10.2px 5.1px;
+    justify-content: center;
+    height: 68.21px;
+    width: 58.01px;
+  }
+
+  .main-content .time-container article .data-time h2{
+    font-size: 40px;
+  }
+
+  .main-content .time-container article p{
+    font-size: 12px;
+    margin-top: 7.65px;
+  }
+
 }
